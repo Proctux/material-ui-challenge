@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, Toolbar, Grid } from '@material-ui/core'
+import { AppBar, Toolbar, Grid, IconButton } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ShareIcon from '@material-ui/icons/Share';
@@ -13,16 +13,24 @@ const Header = () => {
   return (
     <AppBar position="relative">
       <Toolbar>
-        <MenuIcon />
+        <IconButton>
+          <MenuIcon className={styles.icon}/>
+        </IconButton>
         <Grid container justify="flex-end" spacing={3}>
           <Grid item>
-            <NotificationsIcon />
+            <IconButton>
+              <NotificationsIcon className={styles.icon}/>
+            </IconButton>
           </Grid>
           <Grid item>
-            <ShareIcon />
+            <IconButton>
+              <ShareIcon className={styles.icon}/>
+            </IconButton>
           </Grid>
           <Grid item>
-            <SearchIcon />
+            <IconButton>
+              <SearchIcon className={styles.icon}/>
+            </IconButton>
           </Grid>
         </Grid>
       </Toolbar>
