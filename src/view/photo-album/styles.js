@@ -13,5 +13,8 @@ export default makeStyles (theme => ({
   },
   secondaryButton: {
     borderRadius: '1.5rem',
+  },
+  cardList: {
+    marginTop: '6.625rem',
   }
 }))
